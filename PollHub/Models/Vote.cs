@@ -12,8 +12,6 @@ namespace PollHub.Models
         [Required]
         public int BallotId { get; set; }
 
-        [Required]
-        [StringLength(128)]
-        public string CandidateId { get; set; }
+        public int TicketId { get; set; }
     }
 }

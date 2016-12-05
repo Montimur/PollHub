@@ -13,3 +13,21 @@
         </li>
     }
 </ul>
+@section scripts
+{
+    <script>
+        $(document)
+            .ready(function() {
+                $(".js-action-ballot")
+                    .click(function() {
+                        $.post("/api/ballot", { ballotId: button.attr("data-gig-id") })
+                            .success(function() {
+                                
+                            })
+                            .fail(function() {
+                                alert("Something failed!");
+                            });
+                    });
+            });
+    </script>
+}

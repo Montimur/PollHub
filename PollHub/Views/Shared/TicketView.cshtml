@@ -1,0 +1,15 @@
+﻿@model PollHub.ViewModels.TicketViewModel
+@{
+    ViewBag.Title = "Ballot Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>@Model.Ballot.Title</h1>
+<ul>
+    @foreach (var ticket in Model.Ballot.Tickets)
+    {
+        <li>
+            <div class="title">@ticket.Title</div>
+            <span>@ticket.Description</span>
+        </li>
+    }
+</ul>

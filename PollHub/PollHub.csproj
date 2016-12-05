@@ -212,6 +212,7 @@
     <Compile Include="Controllers\BallotController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Dtos\BallotDto.cs" />
     <Compile Include="Dtos\VoteDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -228,9 +229,14 @@
     <Compile Include="Migrations\201612050757546_UpdateModels.Designer.cs">
       <DependentUpon>201612050757546_UpdateModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612052142294_UpdateTicketAndVoteModels.cs" />
+    <Compile Include="Migrations\201612052142294_UpdateTicketAndVoteModels.Designer.cs">
+      <DependentUpon>201612052142294_UpdateTicketAndVoteModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Ballot.cs" />
     <Compile Include="Models\Ticket.cs" />
+    <Compile Include="Controllers\TicketController.cs" />
     <Compile Include="Models\Vote.cs" />
     <Compile Include="ViewModels\BallotViewModel.cs" />
     <Compile Include="ViewModels\ExternalLoginListViewModel.cs" />
@@ -250,6 +256,7 @@
     <Compile Include="ViewModels\ResetPasswordViewModel.cs" />
     <Compile Include="ViewModels\SendCodeViewModel.cs" />
     <Compile Include="ViewModels\SetPasswordViewModel.cs" />
+    <Compile Include="ViewModels\TicketViewModel.cs" />
     <Compile Include="ViewModels\VerifyCodeViewModel.cs" />
     <Compile Include="ViewModels\VerifyPhoneNumberViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -314,6 +321,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\BallotView.cshtml" />
+    <Content Include="Views\Shared\TicketView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -335,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201612050757546_UpdateModels.resx">
       <DependentUpon>201612050757546_UpdateModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612052142294_UpdateTicketAndVoteModels.resx">
+      <DependentUpon>201612052142294_UpdateTicketAndVoteModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
