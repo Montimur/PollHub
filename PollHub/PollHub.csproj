@@ -224,6 +224,10 @@
     <Compile Include="Migrations\201612050100342_AddBallotsAndTickets.Designer.cs">
       <DependentUpon>201612050100342_AddBallotsAndTickets.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612050757546_UpdateModels.cs" />
+    <Compile Include="Migrations\201612050757546_UpdateModels.Designer.cs">
+      <DependentUpon>201612050757546_UpdateModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Ballot.cs" />
     <Compile Include="Models\Ticket.cs" />
@@ -328,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201612050100342_AddBallotsAndTickets.resx">
       <DependentUpon>201612050100342_AddBallotsAndTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612050757546_UpdateModels.resx">
+      <DependentUpon>201612050757546_UpdateModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

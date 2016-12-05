@@ -1,8 +1,15 @@
-﻿@model
+﻿@model PollHub.ViewModels.BallotViewModel
 @{
-    ViewBag.Title = "BallotView";
+    ViewBag.Title = "Home Page";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h2>BallotView</h2>
-
+<h1>Current Polls</h1>
+<ul>
+    @foreach (var ballot in Model.Ballots)
+    {
+        <li>
+            <div class="title">@ballot.Title</div>
+            <button class="btn btn-link btn-sm js-action-ballot" data-ballot-id="@ballot.BallotId">Cast Your Vote</button>
+        </li>
+    }
+</ul>

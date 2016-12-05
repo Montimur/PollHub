@@ -9,9 +9,11 @@ namespace PollHub.Models
         [Key]
         public int BallotId { get; set; }
 
+        [Required]
+        [StringLength(56)]
+        public string Title { get; set; }
+
         public IEnumerable<Ticket> Tickets { get; set; }
-
-
 
         public Ballot()
         {
